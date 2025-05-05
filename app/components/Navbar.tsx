@@ -7,15 +7,27 @@ export default async function Navbar() {
     const session = await auth();
   return (
     <>
-        <header className='bg-black text-white'>
+        <header className=''>
             <nav>
-                <Link href='/'>
-                    Company Name
-                </Link>
+                <div className="flex">
 
-                <div className="">
+                <div className="bg-red-200 flex-1">
+
+                <Link href='/'>
+                    Uber Clone
+                </Link>
+                </div>
+
+                <div className="bg-pink-500 flex-1">
+                    <div className="flex justify-between">
+
                     {session && session?.user ? (
                         <>
+
+                       <Link href={`/user/${session?.user?.id}`}>
+                        <span> {session?.user?.name}</span>
+                       
+                       </Link>
                        <form 
                        action={async() => {
                         'use server'
@@ -25,11 +37,6 @@ export default async function Navbar() {
                         <input type='submit' value='Logout' />
 
                        </form>
-
-                       <Link href={`/user/${session?.user?.id}`}>
-                        <span> {session?.user?.name}</span>
-                       
-                       </Link>
                         </>
 
                        
@@ -48,7 +55,7 @@ export default async function Navbar() {
                         }}
                         >
 
-                            <input type='submit' value='Login'/>
+                            <input type='submit' value='Login With Github'/>
 
                         </form>
                         <form
@@ -60,11 +67,13 @@ export default async function Navbar() {
                         }}
                         >
 
-                            <input type='submit' value='Login'/>
+                            <input type='submit' value='Login with Google'/>
 
                         </form>
                         </>
                     )}
+                    </div>
+                </div>
                 </div>
             </nav>
         </header>
