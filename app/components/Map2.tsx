@@ -2,8 +2,8 @@
 import { APIProvider, Map } from '@vis.gl/react-google-maps'
 import React from 'react'
 
-const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAP_API;
-const mapId = process.env.NEXT_PUBLIC_MAP_ID;
+const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAP_API!;
+const mapId = process.env.NEXT_PUBLIC_MAP_ID!;
 
 export default function Map2() {
   return (
