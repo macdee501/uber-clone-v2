@@ -5,7 +5,6 @@ import React from 'react'
 
 const apiKey:string = process.env.NEXT_PUBLIC_GOOGLE_MAP_API!;
 const mapId:string = process.env.NEXT_PUBLIC_MAP_ID!;
-j
 
 export default function Map2() {
   return (
