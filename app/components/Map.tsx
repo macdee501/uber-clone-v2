@@ -7,7 +7,7 @@ import { GoogleMap } from "@react-google-maps/api";
 //Map's styling
 export const defaultMapContainerStyle = {
     width: '100%',
-    height: '80vh',
+    height: '55vh',
     borderRadius: '15px 0px 0px 15px',
 };
 
@@ -23,7 +23,10 @@ const defaultMapOptions = {
     tilt: 0,
     gestureHandling: 'auto',
     mapTypeId: 'satellite',
+    
 };
+
+const defaultMapId = "5510a1d50c84d833"
 
 export default function Map() {
 
@@ -33,7 +36,11 @@ export default function Map() {
         mapContainerStyle={defaultMapContainerStyle} 
         center={defaultMapCenter}
         zoom={defaultMapZoom}
-        options={defaultMapOptions}/>
+        options={defaultMapOptions}
+        id={defaultMapId}
+        />
     </div>
   )
 }
+
+

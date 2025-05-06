@@ -13,12 +13,12 @@ export default async function Navbar() {
 
                 <div className="bg-red-200 flex-1">
 
-                <Link href='/'>
+                <Link href='/' className='text-2xl'>
                     Uber Clone
                 </Link>
                 </div>
 
-                <div className="bg-pink-500 flex-1">
+                <div className="bg-pink-500 flex-0.5">
                     <div className="flex justify-between">
 
                     {session && session?.user ? (
@@ -34,7 +34,7 @@ export default async function Navbar() {
                         await signOut({redirectTo:"/"})
                        }}>
 
-                        <input type='submit' value='Logout' />
+                        <input type='submit' value='Logout' className='bg-red-500 rounded ml-7 p1'/>
 
                        </form>
                         </>
@@ -55,7 +55,7 @@ export default async function Navbar() {
                         }}
                         >
 
-                            <input type='submit' value='Login With Github'/>
+                            <input type='submit' value='Login With Github' className='bg-blue-200 rounded p-1 m-1'/>
 
                         </form>
                         <form
@@ -67,7 +67,7 @@ export default async function Navbar() {
                         }}
                         >
 
-                            <input type='submit' value='Login with Google'/>
+                            <input type='submit' value='Login with Google' className='bg-red-800 p-1 m-1 items-center rounded'/>
 
                         </form>
                         </>
