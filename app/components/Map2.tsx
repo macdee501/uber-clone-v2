@@ -18,6 +18,7 @@ export default function Map2() {
                 gestureHandling={'greedy'}
                 disableDefaultUI={true}
                 mapId={mapId}
+
             />
 
         </APIProvider>

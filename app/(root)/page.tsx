@@ -1,3 +1,4 @@
+import ActionButton from "../components/ActionButton";
 import Map2 from "../components/Map2";
 import { MapProvider } from "../providers/map-provider";
 
@@ -11,7 +12,7 @@ export default function Home() {
 
           </div>
           <div className="bg-purple-800 flex-1">
-            placeholder for buttons
+            <ActionButton/>
             
           </div>
         </main>
