@@ -6,15 +6,15 @@ export default function ActionButton() {
   return (
     <div className='flex flex-row bg-gray-200 mt-4'>
         <Link href='/search' >
-        <div className="bg-white p-4 m-4 items-center rounded">
-            <Image  src='/uber-car.jpg' width={50} height={50}/>
+        <div className="bg-white p-4 m-4 items-center rounded" >
+            <Image  src='/uber-car.jpg' width={50} height={50} alt=''/>
             <p>Order A ride</p>
         </div>
       
         </Link>
         <Link href='/search' >
         <div className="bg-white p-4 m-4 items-center rounded ">
-            <Image  src='/uber-car.jpg' width={50} height={50}/>
+            <Image  src='/uber-car.jpg' width={50} height={50} alt=''/>
             <p>Schedule A ride</p>
         </div>
       
