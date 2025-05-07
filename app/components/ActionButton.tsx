@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function ActionButton() {
   return (
-    <div className='flex flex-row bg-gray-200 mt-4'>
+    <div className='flex flex-row bg-gray-400 mt-2 justify-between'>
         <Link href='/search' >
         <div className="bg-white p-4 m-4 items-center rounded" >
             <Image  src='/uber-car.jpg' width={50} height={50} alt=''/>
@@ -17,7 +17,6 @@ export default function ActionButton() {
             <Image  src='/uber-car.jpg' width={50} height={50} alt=''/>
             <p>Schedule A ride</p>
         </div>
-      
         </Link>
     </div>
   )

@@ -3,13 +3,11 @@ import { APIProvider, Map } from '@vis.gl/react-google-maps'
 import React from 'react'
 
 
-const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAP_API as string;
 const mapId = process.env.NEXT_PUBLIC_MAP_ID as string;
 
 export default function Map2() {
   return (
     <>
-        <APIProvider apiKey={apiKey}>
             <Map
 
                 style={{width:'100vw',height:'50vh'}}
@@ -21,7 +19,6 @@ export default function Map2() {
 
             />
 
-        </APIProvider>
     </>
   )
 }
