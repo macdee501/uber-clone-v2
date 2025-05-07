@@ -21,7 +21,7 @@ export default function SearchLocationSection() {
         <div className="flex flex-col">
             <div className="bg-red-500 ml-2">
 
-          <PlaceAutocomplete onPlaceSelect={setSelectedPlace} />
+          <PlaceAutocomplete  />
             </div>
             <input placeholder='drop of location?' className='mt-4 ml-2 bg-white'/>
         </div>
