@@ -1,5 +1,4 @@
-import { Autocomplete } from '@react-google-maps/api'
-import { AdvancedMarker, ControlPosition, MapControl, Pin, useAdvancedMarkerRef, useMap, useMapsLibrary } from '@vis.gl/react-google-maps'
+import {  useAdvancedMarkerRef, useMap, useMapsLibrary } from '@vis.gl/react-google-maps'
 import React, { useEffect, useRef, useState } from 'react'
 import { FaRegCircle, FaSquareFull } from 'react-icons/fa'
 import { PiLineVertical } from 'react-icons/pi'
@@ -9,7 +8,6 @@ import { PiLineVertical } from 'react-icons/pi'
 export default function SearchLocationSection() {
 
     const [selectedPlace, setSelectedPlace] = useState<google.maps.places.PlaceResult | null>(null)
-    const [markerRef, marker] = useAdvancedMarkerRef();
   return (
     <>
 
@@ -25,7 +23,6 @@ export default function SearchLocationSection() {
 
           <PlaceAutocomplete onPlaceSelect={setSelectedPlace} />
             </div>
-      {/* <MapHandler place={selectedPlace} marker={marker} /> */}
             <input placeholder='drop of location?' className='mt-4 ml-2 bg-white'/>
         </div>
     </div>
