@@ -33,11 +33,7 @@ export default function SearchLocationSection() {
   )
 }
 
-interface MapHandlerProps {
-    place: google.maps.places.PlaceResult | null;
-    marker: google.maps.marker.AdvancedMarkerElement | null;
-  }
-  
+
 
   
   interface PlaceAutocompleteProps {
