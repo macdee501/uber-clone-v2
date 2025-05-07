@@ -1,7 +1,6 @@
 'use client'
 
 import { APIProvider } from "@vis.gl/react-google-maps";
-import ActionButton from "../components/ActionButton";
 import Map2 from "../components/Map2";
 import SearchLocationSection from "../components/SearchLocationSection";
 

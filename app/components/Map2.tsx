@@ -1,5 +1,5 @@
 'use client'
-import { APIProvider, Map } from '@vis.gl/react-google-maps'
+import { Map } from '@vis.gl/react-google-maps'
 import React from 'react'
 
 
