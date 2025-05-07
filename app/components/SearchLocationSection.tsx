@@ -1,4 +1,4 @@
-import {  useAdvancedMarkerRef, useMap, useMapsLibrary } from '@vis.gl/react-google-maps'
+import {   useMapsLibrary } from '@vis.gl/react-google-maps'
 import React, { useEffect, useRef, useState } from 'react'
 import { FaRegCircle, FaSquareFull } from 'react-icons/fa'
 import { PiLineVertical } from 'react-icons/pi'
@@ -7,7 +7,7 @@ import { PiLineVertical } from 'react-icons/pi'
 
 export default function SearchLocationSection() {
 
-    const [selectedPlace, setSelectedPlace] = useState<google.maps.places.PlaceResult | null>(null)
+    const [ setSelectedPlace] = useState<google.maps.places.PlaceResult | null>(null)
   return (
     <>
 
@@ -38,20 +38,7 @@ interface MapHandlerProps {
     marker: google.maps.marker.AdvancedMarkerElement | null;
   }
   
-  const MapHandler = ({ place, marker }: MapHandlerProps) => {
-    const map = useMap();
-  
-    useEffect(() => {
-      if (!map || !place || !marker) return;
-  
-      if (place.geometry?.viewport) {
-        map.fitBounds(place.geometry?.viewport);
-      }
-      marker.position = place.geometry?.location;
-    }, [map, place, marker]);
-  
-    return null;
-  };
+
   
   interface PlaceAutocompleteProps {
     onPlaceSelect: (place: google.maps.places.PlaceResult | null) => void;
